@@ -1,0 +1,18 @@
+只需在安装git 后运行一次即可，会在~/.gitconfig  中写入
+git config --global user.name "wushicanASL"
+git config --global user.email "1139759515@qq.com"
+
+
+git status #查看git仓库状态 显示为untracked files 因为还没提交文件到git仓库
+
+----提交
+git add hello_world.php   ##git add 命令将文件加入暂存区
+git commit -m "Add hello world script by php" ##提交 -m 表示comment
+
+结果：[master c5d781c] Add hello world script by php
+      1 file changed, 3 insertions(+)
+      created mode 100644 hello_world.php
+
+----进行push
+git push
+###执行后，github上的仓库就会被更新
